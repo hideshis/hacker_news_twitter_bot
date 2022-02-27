@@ -1,7 +1,7 @@
 import requests
 import tweepy
 
-def tweet_random_post_title_and_link(tweet_message):
+def tweet(tweet_message):
     # 認証に必要なキーとトークン
     API_KEY = 'XXXXXXXXXXXXXXX'
     API_SECRET = 'XXXXXXXXXXXXXXX'
@@ -45,7 +45,7 @@ def filter_qa_related_stories(story_id_list):
         if ("qa" in story_title_lower) or ("quality" in story_title_lower) or ("bug" in story_title_lower) or ("test" in story_title_lower):
             tweet_message = story_title + " " + story_url
             print("    " + tweet_message)
-            tweet_random_post_title_and_link(tweet_message)
+            tweet(tweet_message)
 
         counter += 1
         if counter == 100:
