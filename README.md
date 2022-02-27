@@ -1,0 +1,2 @@
+# hacker_news_twitter_bot
+特定のトピックを含むhacker newsのリンクをTwitterに投稿するbot
